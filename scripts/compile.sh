@@ -15,8 +15,8 @@ mkdir -p "$ROOT/.src" "$ROOT/.build" "$INSTALL_DIR"
 git clone --depth 1 https://github.com/glfw/glfw "$SOURCE_DIR"
 
 cmake -S "$SOURCE_DIR" -B "$BUILD_DIR" \
-    -DGLFW_BUILD_WAYLAND \
-    -DGLFW_BUILD_X11 \
+    -DGLFW_BUILD_WAYLAND=ON \
+    -DGLFW_BUILD_X11=ON \
     -DGLFW_LIBRARY_TYPE=STATIC
 
 cmake --build "$BUILD_DIR" -j "$(nproc)"
