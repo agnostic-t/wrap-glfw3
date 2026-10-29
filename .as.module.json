@@ -1,0 +1,11 @@
+{
+  "export": {
+    "modules": {
+      "glfw3": {
+        "version": ">=0.0.0",
+        "name": "glfw3"
+      }
+    },
+    "tests": false
+  }
+}
